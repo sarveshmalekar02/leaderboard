@@ -1,0 +1,158 @@
+.navbar {
+    background-color: #e27498;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+  }
+  
+  .navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .navbar-icon {
+    margin-left: 20px;
+    margin-right: 10px; 
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .navbar-icon:hover {
+    transform: scale(1.1);
+  }
+
+
+  .profile-icon {
+    font-size: 1em; 
+    cursor: pointer;
+}
+
+ .navbar-profile {
+   position: relative;
+ }
+/* Add to src/navbar.css */
+
+  
+  /*
+  .profile-dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .navbar-profile:hover .profile-dropdown {
+    display: block;
+  }
+  
+  .profile-dropdown li {
+    padding: 10px;
+  }
+  
+  .profile-dropdown a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .profile-dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+   */
+
+
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .navbar-links li {
+    margin: 10px 15px 10px 10px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+    letter-spacing: 0.5px;
+    
+  }
+  
+  .navbar-links a:hover {
+    color: #ffd700;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-top {
+      justify-content: space-between;
+    }
+  
+    .navbar-icons {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-links li {
+      margin: 10px 0;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
